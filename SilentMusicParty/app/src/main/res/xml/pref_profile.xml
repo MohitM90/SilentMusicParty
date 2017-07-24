@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_default_username"
+        android:inputType="textCapWords"
+        android:key="username"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_display_name"/>
+
+    <de.tudarmstadt.informatik.tk.silentmusicparty.DatePreference
+        android:defaultValue="@string/pref_default_birthday"
+        android:key="birthday"
+        android:title="@string/birthday" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_default_height"
+        android:inputType="number"
+        android:key="height"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/height"/>
+
+    <ListPreference
+        android:defaultValue="@string/pref_default_gender"
+        android:entries="@array/gender"
+        android:entryValues="@array/gender_values"
+        android:key="gender"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/gender" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_default_location"
+        android:inputType="textPostalAddress"
+        android:key="location"
+        android:selectAllOnFocus="true"
+        android:title="@string/location"/>
+
+    <EditTextPreference
+        android:inputType="textMultiLine"
+        android:defaultValue="@string/pref_default_message"
+        android:key="message"
+        android:selectAllOnFocus="true"
+        android:singleLine="false"
+        android:title="@string/message"/>
+
+</PreferenceScreen>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="de.tudarmstadt.informatik.tk.silentmusicparty">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher2"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.HostPartyActivity"
+            android:label="@string/title_activity_host_party"
+            android:parentActivityName=".activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.tudarmstadt.informatik.tk.silentmusicparty.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.EditProfileActivity"
+            android:parentActivityName=".activities.ViewProfileActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.tudarmstadt.informatik.tk.silentmusicparty.activities.ViewProfileActivity" />
+        </activity>
+        <activity
+            android:name=".activities.ViewProfileActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".activities.AddSongActivity"
+            android:label="@string/title_activity_add_song"
+            android:parentActivityName=".activities.PartyActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.tudarmstadt.informatik.tk.silentmusicparty.activities.PartyActivity" />
+        </activity>
+        <activity
+            android:name=".activities.JoinPartyActivity"
+            android:label="@string/title_activity_join_party"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.tudarmstadt.informatik.tk.silentmusicparty.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.PartyActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_party"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.PlaylistsActivity"
+            android:label="@string/title_activity_playlists"
+            android:parentActivityName=".activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.tudarmstadt.informatik.tk.silentmusicparty.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.EditPlaylistActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label=""
+            android:parentActivityName=".activities.PlaylistsActivity"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.tudarmstadt.informatik.tk.silentmusicparty.activities.PlaylistsActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.SongLibraryActivity"
+            android:label="@string/title_activity_song_library"
+            android:parentActivityName=".activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.tudarmstadt.informatik.tk.silentmusicparty.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.EditSongActivity"
+            android:label="@string/title_activity_add_song"
+            android:parentActivityName=".activities.SongLibraryActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.tudarmstadt.informatik.tk.silentmusicparty.activities.SongLibraryActivity" />
+        </activity>
+        <service
+            android:name=".services.MediaPlayerService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.SensorService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.NetworkService"
+            android:enabled="true"
+            android:exported="true" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- TODO: continue here-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/grp1" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_song"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Playlist" />
+        <item
+            android:id="@+id/nav_guests"
+            android:icon="@drawable/ic_people"
+            android:title="Guests" />
+        <item
+            android:id="@+id/nav_shoutbox"
+            android:icon="@drawable/ic_menu_chat"
+            android:title="Shoutbox" />
+
+    </group>
+    <group android:id="@+id/grp2" android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_add_song_songlist"
+            android:icon="@drawable/ic_library_music"
+            android:title="Add Song" />
+        <item
+            android:id="@+id/nav_leave"
+            android:icon="@drawable/ic_logout"
+            android:title="Leave Party" />
+    </group>
+
+</menu>

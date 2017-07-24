@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="8dip"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="tttttttttttttttttttttttttttttttttttttttttttttttttttttttttt"
+        android:layout_toStartOf="@+id/number_votes"
+        android:layout_toLeftOf="@+id/number_votes"
+        android:maxLines="1"
+        android:ellipsize="end" />
+
+    <TextView android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:layout_alignLeft="@+id/text1"
+        android:textSize="12sp"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/voteUp_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        app:backgroundTint="#e9a3c9"
+        app:srcCompat="@drawable/ic_thumb_down" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/voteDown_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/voteUp_btn"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        app:backgroundTint="#a1d76a"
+        app:srcCompat="@drawable/ic_thumb_up" />
+
+    <TextView android:id="@+id/number_votes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/voteDown_btn"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:textSize="14sp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">Silent Music Party</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_host">Host</string>
+    <string name="title_activity_host_party">Host Party</string>
+
+    <string name="partydescription">Description</string>
+    <string name="partygenre">Genre</string>
+    <string name="partyhost">Hosted by</string>
+    <string name="partynumber">Number of Guests</string>
+
+    <string-array name="party_titles">
+        <item>@string/partyhost</item>
+        <item>@string/partynumber</item>
+        <item>@string/partygenre</item>
+        <item>@string/partydescription</item>
+    </string-array>
+
+    <string name="birthday">Birthday</string>
+    <string name="height">Height</string>
+    <string name="gender">Gender</string>
+    <string name="location">Location</string>
+    <string name="message">Message</string>
+    <string name="female">female</string>
+    <string name="male">male</string>
+
+    <string-array name="profile_titles">
+        <item>@string/birthday</item>
+        <item>@string/height</item>
+        <item>@string/gender</item>
+        <item>@string/location</item>
+        <item>@string/message</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>@string/female</item>
+        <item>@string/male</item>
+    </string-array>
+    <string-array name="gender_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="playlist_array">
+        <item>Playlist1</item>
+        <item>Playlist2</item>
+        <item>Playlist3</item>
+        <item>Playlist4</item>
+        <item>Playlist5</item>
+        <item>Playlist6</item>
+        <item>Playlist7</item>
+        <item>Playlist8</item>
+    </string-array>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Name</string>
+    <string name="pref_connection">Connection</string>
+    <string name="action_saveProfile">Edit</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="pref_default_username">Max Mastermind</string>
+    <string name="pref_default_birthday">14.10.1990</string>
+    <string name="pref_default_height">170</string>
+    <string name="pref_default_gender">1</string>
+    <string name="pref_default_location">Darmstadt</string>
+    <string name="pref_default_message">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+        Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+        diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+        gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</string>
+    <string-array name="pref_default_profile">
+        <item>@string/pref_default_birthday</item>
+        <item>@string/pref_default_height</item>
+        <item>@string/pref_default_gender</item>
+        <item>@string/pref_default_location</item>
+        <item>@string/pref_default_message</item>
+    </string-array>
+    <string-array name="pref_connection_types">
+        <item>WiFi</item>
+        <item>Bluetooth</item>
+    </string-array>
+    <string-array name="pref_connection_types_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string name="title_activity_join_party">JoinPartyActivity</string>
+    <string name="title_activity_party">PartyActivity</string>
+    <string name="title_activity_playlists">Playlists</string>
+    <string name="title_activity_edit_playlists">Edit Playlist</string>
+    <string name="title_activity_create_playlist">Create new Playlist</string>
+
+
+    <string name="filter">Filter Songs</string>
+    <string name="filter_hint">Filter Songs</string>
+    <string name="available_songs">Available Songs</string>
+    <string name="songs_in_playlist">In Playlist</string>
+
+    <string name="playlist_title">Playlist Title</string>
+    <string name="playlist_title_hint">Title</string>
+    <string name="title_activity_tabbed_party">TabbedPartyActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_add_song">Add Song</string>
+    <string name="title_activity_edit_song">Edit Song</string>
+    <string name="title_activity_song_library">Song Library</string>
+    <string name="title_activity_add_playlist">Add Playlist</string>
+
+</resources>

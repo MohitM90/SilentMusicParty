@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/grp1" android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_menu_search"
+            android:title="Search Partys" />
+        <item
+            android:id="@+id/nav_host"
+            android:icon="@drawable/ic_add"
+            android:title="Host Party" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_menu_person"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_playlists"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Playlists" />
+        <item
+            android:id="@+id/nav_song_library"
+            android:icon="@drawable/ic_library_music"
+            android:title="Song Library" />
+    </group>
+
+</menu>
